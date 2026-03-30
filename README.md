@@ -1,4 +1,4 @@
 # Travel Agency Website
 
-built using JavaScript & CSS, HTML.
+built using CSS, HTML
 
