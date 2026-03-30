@@ -1,0 +1,79 @@
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .nav-one {
+        height: auto; /* Adjust height for smaller screens */
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .nav-sec {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .logo {
+        font-size: 20px; 
+    }
+
+    .nav-links-left, .nav-links-right {
+        flex-direction: column; 
+    }
+
+    .newsletter-container {
+        padding: 10px; 
+    }
+
+    .form-group {
+        grid-template-columns: 1fr; 
+        margin: 0 20px; 
+    }
+
+    hr {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .service {
+        width: 100%; 
+    }
+
+    .service_card {
+        flex-direction: row; 
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .service-header {
+        flex-direction: row; 
+        align-items: flex-start;
+    }
+
+    .service-icon {
+        flex: 0 0 20px; 
+        font-size: 20px; 
+    }
+
+    .service-content h2 {
+        font-size: 20px; 
+    }
+
+    .service-content p {
+        font-size: 15px; 
+    }
+
+    .service-link {
+        font-size: 15px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testi-slide p {
+      padding: 0 20px;
+    }
+    .review-btn {
+      display: none;
+    }
+  }

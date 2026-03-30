@@ -1,0 +1,331 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/nav_style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/response.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /* Contact Section */
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 60px;
+        padding: 60px 80px;
+        background-color: #fff;
+    }
+
+    /* Contact Info */
+    .contact-info {
+        flex: 1;
+        max-width: 380px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #6b0020;
+        margin-bottom: 10px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 30px;
+        line-height: 1.7;
+    }
+
+    .info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+        margin-bottom: 20px;
+    }
+
+    .info-item i {
+        color: #6b0020;
+        font-size: 18px;
+        margin-top: 3px;
+    }
+
+    .info-item span {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.6;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        flex: 1;
+        max-width: 500px;
+    }
+
+    .contact-form h2 {
+        font-size: 28px;
+        font-weight: 700;
+        color: #44041c;
+        margin-bottom: 20px;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        color: #555;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 10px 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        outline: none;
+        transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+        border-color: #44041c;
+    }
+
+    .form-group textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    .submit-btn {
+        background-color: #44041c;
+        color: #fff;
+        padding: 12px 32px;
+        border: none;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        transition: background-color 0.2s;
+    }
+
+    .submit-btn:hover {
+        background-color: #64263c;
+    }
+
+
+    @media (max-width: 768px) {
+        .contact-section {
+            flex-direction: column;
+            padding: 40px 24px;
+            gap: 40px;
+        }
+
+        .contact-info,
+        .contact-form {
+            max-width: 100%;
+        }
+
+        .form-row {
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .section-divider {
+            margin: 0 24px;
+        }
+    }
+</style>
+
+<body class="bg-white text-gray-800">
+
+    <header>
+        <nav class="nav-one flex">
+            <div class="left flex">
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>info@astareatravel.com</span>
+                </div>
+                <div class="call">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>+123456789</span>
+                </div>
+            </div>
+            <div class="right flex">
+                <div class="fb">
+                    <i class="fa-brands fa-facebook"></i>
+                </div>
+                <div class="insta">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="utube">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="pin">
+                    <i class="fa-brands fa-pinterest"></i>
+                </div>
+                <div class="twet">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-sec flex">
+            <ul class="nav-links-left">
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Destinations <i class="fa-solid fa-angle-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="destination/USA.html">USA</a>
+                        <a href="#">France</a>
+                        <a href="destination/japan.html">Japan</a>
+                        <a href="destination/australia.html">Australia</a>
+                    </div>
+                </li>
+                <li><a href="about.html" target="_blank">About Us</a></li>
+            </ul>
+            <div class="logo">
+                <img src="image/logo.png" alt="Astarea Travel" />
+            </div>
+            <ul class="nav-links-right">
+                <li><a href="trip_plan.html" target="_blank">Plan a Trip</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="relative">
+        <img src="image/contact.jpg" alt="" width="1920px">
+        <!-- <img alt="" class="w-full h-64 object-cover" height="500" src="img.jpg" width="1920" /> -->
+    </div>
+
+    <section class="contact-section">
+
+        <div class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you. Whether you have a question about a destination, a booking, or anything else
+                — our team is ready to help.</p>
+
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>123 Travel Stre50<br>Rainy Weather, HL 8849, Mars</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>+123456789</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@astareatravel.com</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-clock"></i>
+                <span>Mon – Fri: 9:00 AM – 6:00 PM<br>Sat: 10:00 AM – 4:00 PM</span>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>About Asterea</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Our awards</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Here to Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Protection Promise</a></li>
+                        <li><a href="#">VIP Travel services</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Local Airport Flights</a></li>
+                        <li><a href="#">VIP Plus</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Your Booking</h4>
+                    <ul>
+                        <li><a href="#">My Booking</a></li>
+                        <li><a href="#">Agent login</a></li>
+                    </ul><br><br>
+                    <h4>Inspiration</h4>
+                    <ul>
+                        <li><a href="#">Explore new tours</a></li>
+                        <li><a href="#">where to go when</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Special Offers</h4>
+                    <img src="image/special_offer.jpg" alt="No Offer available">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

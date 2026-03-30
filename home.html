@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astarea Travel</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/nav_style.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/response.css">
+</head>
+<body>
+    <nav class="nav-one flex">
+        <div class="left flex">
+            <div class="nav-mail">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@astareatravel.com</span>
+            </div>
+            <div class="nav-call">
+                <i class="fa-solid fa-headset"></i>
+                <span>+123456789</span>
+            </div>
+        </div>
+        <div class="right flex">
+            <div class="fb">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
+            <div class="insta">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="utube">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="pin">
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="twet">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="nav-sec flex">
+        <ul class="nav-links-left">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Destinations <i class="fa-solid fa-angle-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="destination/USA.html">USA</a>
+                    <a href="#">France</a>
+                    <a href="destination/japan.html">Japan</a>
+                    <a href="destination/australia.html">Australia</a>
+                </div>
+            </li>
+            <li><a href="about.html" target="_blank">About Us</a></li>
+        </ul>
+        <div class="logo">
+            <img src="image/logo.png" alt="Astarea Travel" />
+        </div>
+        <ul class="nav-links-right">
+            <li><a href="trip_plan.html" target="_blank">Plan a Trip</a></li>
+            <li><a href="contact.html" target="_blank">Contact</a></li>
+        </ul>
+    </nav>        
+    
+    <section class="photo-slider swiper mySwiper" >
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="image/slider1.jpg" alt="Image Lost!!!" class="image" />
+                <div class="image-data">
+                    <span class="text">LOVE THE PLACES</span>
+                    <h2>Be a Traveller not a Tourist</h2>
+                    <a href="#" class="button">Book Now!</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="image/slider3.jpg" alt="Image Lost!!!" class="image" />
+                <div class="image-data">
+                  <span class="text">NEVER STOP EXPLORING</span>
+                  <h2>Wherever you go, it'll be inside the world.
+                  </h2>
+                  <a href="#" class="button">Book Now!</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS --> <!--from swipperjs google -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <section class="carousal">
+        <div class="col-img">
+            <img src="image/carousal1.jpg" alt="Image 1">
+            <div class="col-data">
+                <span class="col-text">Record Your Story</span>
+            </div>
+        </div>
+        <div class="col-img">
+            <img src="image/carousal2.jpg" alt="Image 1">
+            <div class="col-data">
+                <span class="col-text">See the Unseen</span>
+            </div>
+        </div>
+        <div class="col-img">
+            <img src="image/carousal3.jpg" alt="Image 1">
+            <div class="col-data">
+                <span class="col-text">Explore the Depth</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" style="margin-top: 80px;">
+        <h1>Our Services</h1>
+        <p class="subtitle">We Offer The Following Services</p>
+        <div class="facility">
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-plane fa-lg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Air Ticketing</h2>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit quo quis sit excepturi et harum.
+                            Deserunt tenetur commodi quaerats rem porro. Sonsectetur adipisicing imilique.</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-anchor fa-lg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Cruises</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ad praesentium voluptatem exercitationem, aliquid odio saepe fugit 
+                            veniam nam dolorem blanditiis necessitatibus.</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-person-walking-luggage fa-lg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Tour Packages</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quae suscipit
+                             Vel reiciendis lorem blanditiis nec ipsam quis eum iure, asperiores provident eos nulla architecto sapiente enim labore!</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-hotel fa-lg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Hotel Accomodations</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quae suscipit
+                             Vel reiciendis ipsam quis eum iure, asperiores provident eos nulla architecto sapiente enim labore!</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fa-solid fa-sailboat fa-lg"></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Sea Explorations</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quae suscipit
+                             Vel reiciendis ipsam quis eum iure, asperiores provident eos nulla architecto sapiente enim labore!</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="service_card">
+                <div class="service-header">
+                    <div class="service-icon">
+                        <i class="fas fa-skiing fa-lg" ></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Ski Experiences</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod quae suscipit
+                             Vel reiciendis ipsam quis eum iure, asperiores provident eos nulla architecto sapiente enim labore!</p>
+                        <a href="#" class="service-link">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review">
+        <div class="testimonial mySwiper">
+            <div class="rev-header">
+                <p>TESTIMONIALS</p><hr>
+                <h3>What Our Clients Say About Us</h3>
+            </div>
+            <div class="testi-content swiper-wrapper">
+                <div class="testi-slide swiper-slide">
+                  <img src="image/review1.jpg" alt="" class="rev-image" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                    doloremque deserunt eum nemo.
+                  </p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <div class="details">
+                    <span class="name">Marnie Lotter</span>
+                    <span class="job">Spain, 30 July 2024</span>
+                  </div>
+                </div>
+                <div class="testi-slide swiper-slide">
+                  <img src="image/review2.jpg" alt="" class="rev-image" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                    doloremque deserunt eum nemo.
+                  </p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <div class="details">
+                    <span class="name">Lucy Chen</span>
+                    <span class="job">The Himalayas, 18 September 2023</span>
+                  </div>
+                </div>
+                <div class="testi-slide swiper-slide">
+                    <img src="image/review3.jpg" alt="" class="rev-image" />
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                      saepe provident dolorem a quaerat quo error facere nihil deleniti
+                      eligendi ipsum adipisci, fugit, architecto amet asperiores
+                      doloremque deserunt eum nemo.
+                    </p>
+                    <i class="fa-solid fa-quote-left"></i>
+                    <div class="details">
+                      <span class="name">John Bradford</span>
+                      <span class="job">California, 2 February 2023</span>
+                    </div>
+                </div>
+                <div class="testi-slide swiper-slide">
+                  <img src="image/review4.jpg" alt="" class="rev-image" />
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                    saepe provident dolorem a quaerat quo error facere nihil deleniti
+                    eligendi ipsum adipisci, fugit, architecto amet asperiores
+                    doloremque deserunt eum nemo.
+                  </p>
+                  <i class="fa-solid fa-quote-left"></i>
+                  <div class="details">
+                    <span class="name">Thomas Matthew</span>
+                    <span class="job">San Diego, 14 August 2024</span>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-box" style="margin: 80px auto;"></section>
+
+    <section class="newsletter-section" style="margin-top: 80px;">
+        <div class="newsletter-container">
+            <h2 class="newsletter-title">Inspiration for Your Next Escape</h2>
+            <hr>
+            <p class="newsletter-text">Subscribe to our newsletter for our Next Dream Vacation and Exclusive Deals.</p>
+  
+            <div class="form-group">
+            <!-- First row: First Name and Last Name -->
+                <div class="row-news">
+                    <div class="column-1 name-inputs">
+                        <div class="input-container">
+                            <label for="first-name" class="border-label">First Name</label>
+                            <input type="text" id="first-name" class="name-input" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="last-name" class="border-label">Last Name</label>
+                            <input type="text" id="last-name" class="name-input" required>
+                        </div>
+                    </div>
+                    <div class="column-2"></div>
+                </div>
+                <!-- Second row: Email and Submit Button -->
+                <div class="row-news">
+                    <div class="column-1">
+                        <div class="input-container">
+                            <label for="email" class="border-label">Email Address</label>
+                            <input type="email" id="email" class="email-input" required>
+                        </div>
+                    </div>
+                    <div class="column-2">
+                        <button class="submit-button">Submit</button>
+                    </div>
+                </div>
+        
+            <!-- Third row: Terms and Conditions -->
+                <div class="row-news">
+                    <div class="column-1">
+                        <p class="policy-text">For more information about how we use your personal information,
+                            please view our <a href="#">Terms & Conditions</a>.
+                        </p>
+                    </div>
+                    <div class="column-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">        
+        <div class="footer-container">
+            <div class="row-footer">
+                <div class="footer-col">
+                    <h4>About Asterea</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Our awards</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Here to Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Travel Insurance</a></li>
+                        <li><a href="#">Protection Promise</a></li>
+                        <li><a href="#">VIP Travel services</a></li>
+                        <li><a href="#">Booking Conditions</a></li>
+                        <li><a href="#">Local Airport Flights</a></li>
+                        <li><a href="#">VIP Plus</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Your Booking</h4>
+                    <ul>
+                        <li><a href="#">My Booking</a></li>
+                        <li><a href="#">Agent login</a></li>
+                    </ul><br><br>
+                    <h4>Inspiration</h4>
+                    <ul>
+                        <li><a href="#">Explore new tours</a></li>
+                        <li><a href="#">where to go when</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Special Offers</h4>
+                    <img src="image/special_offer.jpg" alt="No Offer available">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

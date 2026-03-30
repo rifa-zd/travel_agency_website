@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* width: 100%; */
+    height: 100vh;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    padding: 0 50px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-one{
+    background-color: #44041c;
+    color: #e9e3e5;
+    height: 40px;
+    cursor: pointer;
+}
+
+.left > div{
+    margin-left: 40px;
+}
+
+.right > div{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+.left > div:hover, .right > div:hover{
+    color: #00ac8a;
+    transition: all 0.5s;
+}
+span{
+    margin-left: 5px;
+}
+
+.nav-sec {
+    background-color: #44041c;
+    color: #e9e3e5;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0 50px;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button styling */
+.dropbtn {
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #44041c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: aliceblue;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #64263c;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the button color when the dropdown is active */
+.dropdown:hover .dropbtn {
+    color: #00ac8a;
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 24px;
+    color: aliceblue;
+    height: 130px; 
+    width: 130px;
+    border-radius: 50%;
+    border-top: 7px solid #aa1c50;
+}
+
+.logo img {
+    height: 130px; 
+    width: auto;
+}   
+
+.nav-links-left, .nav-links-right {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links-left li, .nav-links-right li {
+    margin: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    /* margin-left: 30px; */
+    color: aliceblue;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-links-left a{
+    margin-left: 30px;
+}
+
+.nav-links-right a {
+    margin-right: 60px;
+}
+
+.footer{
+	background-color: #44041c;
+    padding: 70px 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+}
+
+.row-footer{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul{
+	list-style: none;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 25px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #c91b55;
+	height: 2px;
+	box-sizing: border-box;
+	width: 60%;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
+	color: #a7a7a7;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #00ac8a;
+	padding-left: 8px;
+}
