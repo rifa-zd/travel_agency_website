@@ -1,4 +1,9 @@
 # Travel Agency Website
 
-built using CSS, HTML
+>part of a coursework
+
+
+**mini project using:** HTML, CSS, JS Framework (Carousel)
+
+[Demo Video](https://youtu.be/x3OCPLT0ROY?si=GOzKgEpEWr9xz4Mx)
 
